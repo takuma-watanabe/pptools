@@ -1,5 +1,6 @@
 require 'erb'
 require 'json5'
+require 'helper/FileOutHelper'
 
 module Pptools
     class Constants < Thor
@@ -85,9 +86,9 @@ module Pptools
         def client()
             exec(
                 options[:input],
-                './templates/client/Constants.ts.erb', 
-                './templates/client/ConstantsCategory.ts.erb', 
-                './templates/client/ConstantsItem.ts.erb',
+                './templates/client/HKConstants.ts.erb', 
+                './templates/client/HKConstantsCategory.ts.erb', 
+                './templates/client/HKConstantsItem.ts.erb',
                 options[:output],
             )
         end
@@ -98,9 +99,9 @@ module Pptools
         def server()
             exec(
                 options[:input],
-                './templates/server/Constants.java.erb', 
-                './templates/server/ConstantsCategory.java.erb', 
-                './templates/server/ConstantsItem.java.erb',
+                './templates/server/HKConstants.java.erb', 
+                './templates/server/HKConstantsCategory.java.erb', 
+                './templates/server/HKConstantsItem.java.erb',
                 options[:output],
             )
         end

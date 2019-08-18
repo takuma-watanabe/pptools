@@ -1,5 +1,6 @@
 require 'erb'
 require 'json5'
+require 'helper/FileOutHelper'
 
 module Pptools
     class CodeMaster < Thor
@@ -56,7 +57,7 @@ module Pptools
             exec(options[:input], template_file, options[:output])
         end
 
-        desc "client", "create message file for server"
+        desc "server", "create message file for server"
         option :input, :required => true, aliases: '-i', desc: '入力データファイルパス。'
         option :output, aliases: '-o', desc: '結果の出力ファイルパス。指定しない場合inputと同じディレクトリに出力します'
         def server()

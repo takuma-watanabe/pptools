@@ -1,27 +1,8 @@
 {
   CMN: {
     description: "素敵ネット共通で使用する定数",
-    items: [
-      {
-        key: "CMN_ROOT_1",
-        description: "システム名",
-        value: "素敵ネット",
-        type: "String"
-      },
-    ],
     OPC: {
       description: "業務共通で使用する定数",
-      AAA: {
-        description: "AAA DESCR",
-        items: [
-          {
-            key: "AAA_ROOT_1",
-            description: "システム名",
-            value: "素敵ネット",
-            type: "String"
-          },
-        ],
-      },
       items: [
         {
           key: "SYSTEM_NAME",

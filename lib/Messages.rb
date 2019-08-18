@@ -1,6 +1,6 @@
 require 'erb'
 require 'json5'
-require 'FileOutHelper'
+require 'helper/FileOutHelper'
 
 module Pptools
     class Messages < Thor

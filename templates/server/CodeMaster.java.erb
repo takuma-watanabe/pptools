@@ -21,9 +21,8 @@ import lombok.Getter;
  * 
  */
 public class CodeMaster {
-
     <%- records.each do |record| -%>
-    // 
+
     /**
      * <%= record.logicalName %>
      * <%= record.description %>
@@ -35,7 +34,7 @@ public class CodeMaster {
 
         <%- record.items.each do |item| -%>
         /** <%= item.logicalName %> */
-        <%= item.phisicalName %>("<%= item.value %>", <%= item.logicalName %>, <%= item.value %>),
+        <%= item.phisicalName %>("<%= item.value %>", "<%= item.logicalName %>", <%= item.order %>),
         <%- end -%>
         ;
 

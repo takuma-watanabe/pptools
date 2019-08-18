@@ -38,13 +38,17 @@ class CodeMasterInterface {
 }
 
 <%- records.each do |record| -%>
+
+
 // <%= record.logicalName %>
 export class <%= record.phisicalName %> extends CodeMasterInterface {
     protected static  _values: <%= record.phisicalName %>[] = [];
     <%- record.items.each do |item| -%>
+
     /** <%= item.logicalName %> */
     static readonly <%= item.phisicalName %> = new <%= record.phisicalName %>("<%= item.value %>", "<%= item.logicalName %>", <%= item.order %>);
     <%- end -%>
+
     /** コンストラクタ */
     private constructor(readonly value: string, readonly label: string, readonly displayOrder: number) {
         super(value, label, displayOrder);

@@ -1503,6 +1503,12 @@
     name: "有効無効（チェック）",
     description: '二値選択「有効/無効」の共通コード。',
     items: {
+      /**  */
+      NOT: { 
+        label: "", 
+        value: "0", 
+        order: 1
+      },
       /** ✓ */
       VALID: {
         label: "✓",
