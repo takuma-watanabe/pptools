@@ -66,7 +66,11 @@ module Pptools
         end
 
         desc "view", "NOT implemented yet"
+        option :input, :required => true, aliases: '-i', desc: '入力データファイルパス。'
+        option :output, aliases: '-o', desc: '結果の出力ファイルパス。指定しない場合inputと同じディレクトリに出力します'
         def view()
+            template_file = './templates/server/CodeMaster.html.erb'
+            exec(options[:input], template_file, options[:output])
         end
     end
 end

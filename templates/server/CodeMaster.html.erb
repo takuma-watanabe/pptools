@@ -1,0 +1,39 @@
+<html>
+<body>
+<table border="1" style="border-collapse: collapse">
+<thead>
+<tr>
+<th>#</th>
+<th>
+    論理名<br />
+    物理名<hr width="95%"/>
+    説明
+</th>
+<th nowrap>表示順</th>
+<th>物理名(論理名)</th>
+<th>値</th>
+</tr>
+</thead>
+<tbody>
+<%- records.sort{|a, b| a.phisicalName <=> b.phisicalName }.each_with_index do |record, index| -%>
+<%- record.items.sort{|a, b| a.order <=> b.order }.each_with_index do |item, i| -%>
+<tr>
+    <%- if i === 0 -%>
+    <td valign="top" rowspan="<%= record.items.count %>"><%= index + 1 %></td>
+    <td valign="top" rowspan="<%= record.items.count %>">
+        <%= record.logicalName %><br />
+        <%= record.phisicalName %><hr width="95%" />
+        <%= record.description %>
+    </td>
+    <%- end -%>
+    <td><%= item.order %></td>
+    <td nowrap><%= item.phisicalName %> (<%= item.logicalName %>)</td>
+    <td><%= item.value %></td>
+</tr>
+<%- end -%>
+
+<%- end -%>
+</tbody>
+</table>
+</body>
+</html>
