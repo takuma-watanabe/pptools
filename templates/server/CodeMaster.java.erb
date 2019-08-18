@@ -1,0 +1,104 @@
+package com.hisol.pinkpanther;
+
+import java.util.Arrays;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+
+/**
+ * コード一覧を表す定数クラス
+ *
+ * [使い方]（例：ありなし）
+ * 
+ * - 指定のコード値取得
+ *  CodeMaster.HAVE_OR_NOT.NOT.code
+ *  CodeMaster.HAVE_OR_NOT.HAVE.code
+ * 
+ * - コード値に対するラベルの取得
+ *  CodeMaster.HAVE_OR_NOT.codeToEnumConstants("0")
+ * 
+ * - 指定区分のコード値一覧取得
+ *  CodeMaster.HAVE_OR_NOT.values();
+ * 
+ */
+public class CodeMaster {
+
+    <%- records.each do |record| -%>
+    // 
+    /**
+     * <%= record.logicalName %>
+     * <%= record.description %>
+     * 
+     */
+    @AllArgsConstructor
+    @Getter
+    public enum <%= record.phisicalName %> implements CodeMasterInterface<<%= record.phisicalName %>> {
+
+        <%- record.items.each do |item| -%>
+        /** <%= item.logicalName %> */
+        <%= item.phisicalName %>("<%= item.value %>", <%= item.logicalName %>, <%= item.value %>),
+        <%- end -%>
+        ;
+
+        /** 値 */
+        private final String code;
+
+        /** ラベル */
+        private final String label;
+
+        /** 表示順 */
+        private final int displayOrder;
+
+        /** コード値 → Enumへの変換を行う */
+        public static <%= record.phisicalName %> codeToEnumConstants(final String code) {
+            return CodeMasterInterface.codeToEnumConstants(<%= record.phisicalName %>.class, code);
+        }
+    }
+    <%- end -%>
+
+    /**
+     * コード一覧定数の共通Interface
+     */
+    public interface CodeMasterInterface<E extends Enum<E>> {
+
+        /**
+         * コード値を返却する。
+         * @return コード値
+         */
+        String getCode();
+
+        /**
+         * コード値に合致する場合は、trueを返却する。
+         *
+         * @param code コード値
+         * @return 検査結果(true:合致する, false:合致しない)
+         */
+        default boolean equalsByCode(final String code){
+            return this.getCode().equals(code);
+        }
+
+        /**
+         * キャスト用メソッド
+         *
+         * @return キャストされたEnum
+         */
+        default E toEmum() {
+            return (E) this;
+        }
+
+        /**
+         * コード値 → Enumへの変換を行う。
+         *
+         * @param clazz 取得対象のEnum
+         * @param code コード
+         * @param <E> 型パラメータ
+         * @return 該当するEnum
+         */
+        static <E extends Enum<E>> E codeToEnumConstants(Class<? extends CodeMasterInterface<E>> clazz, final String code) {
+            return Arrays.stream(clazz.getEnumConstants())
+                    .filter(e -> e.equalsByCode(code))
+                    .map(e -> e.toEmum())
+                    .findFirst()
+                    .orElse(null);
+        }
+    }
+}

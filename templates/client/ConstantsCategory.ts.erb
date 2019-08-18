@@ -1,0 +1,9 @@
+<%= "  " * depth%>// <%= record.description %>
+<%= "  " * depth%><%= record.name %>: {
+<%- record.categories && record.categories.each do |category| -%>
+<%=   output_tree(category, depth) -%>
+<%- end -%>
+<%- record.items && record.items.each do |item| -%>
+<%=   output_tree(item, depth) -%>
+<%- end -%>
+<%= "  " * depth%>},

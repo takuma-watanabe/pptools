@@ -1,0 +1,558 @@
+{
+  CMN: {
+    description: "素敵ネット共通で使用する定数",
+    items: [
+      {
+        key: "CMN_ROOT_1",
+        description: "システム名",
+        value: "素敵ネット",
+        type: "String"
+      },
+    ],
+    OPC: {
+      description: "業務共通で使用する定数",
+      AAA: {
+        description: "AAA DESCR",
+        items: [
+          {
+            key: "AAA_ROOT_1",
+            description: "システム名",
+            value: "素敵ネット",
+            type: "String"
+          },
+        ],
+      },
+      items: [
+        {
+          key: "SYSTEM_NAME",
+          description: "システム名",
+          value: "素敵ネット",
+          type: "String"
+        },
+        {
+          key: "SERVER_NAME",
+          description: "サーバ名",
+          value: "素敵ネットサーバ",
+          type: "String"
+        },
+        {
+          key: "FACILITY_RESERVATION_TIMELINE_STARTING_POSITION",
+          description: "施設予約画面のタイムライン表示開始時刻",
+          value: 8,
+          type: "int"
+        },
+        {
+          key: "MAX_SELECTABLE_KEY_NUMBER",
+          description: "同時入室番号の選択上限数",
+          value: 15,
+          type: "int"
+        },
+        {
+          key: "ABOUT_HASEKO_ID_URL",
+          description: "長谷工ID紹介画面URL",
+          value: "https://www.haseko.co.jp/branchera/id/",
+          type: "String"
+        },
+        {
+          key: "ABOUT_SMILE_URL",
+          description: "住まいレージ紹介画面URL",
+          value: "https://www.haseko.co.jp/branchera/smile/about-smile.php",
+          type: "String"
+        },
+        {
+          key: "FLP_FORGET_PASSWORD_MAIL_URL",
+          description: "パスワード再設定画面URL",
+          value: "https://haseko.flpjp.com/forgetPwdMail",
+          type: "String"
+        },
+        {
+          key: "FLP_SMILE_POINT_URL",
+          description: "住まいレージポイント画面URL",
+          value: "https://haseko.flpjp.com/pointExchangeList",
+          type: "String"
+        }
+      ]
+    },
+    SYC: {
+      description: "システム共通で使用する定数",
+      items: [
+        {
+          key: "TOKEN_VALID_HOUR",
+          description: "トークン有効時間",
+          value: 2,
+          type: "int"
+        },
+        {
+          key: "PROCESS_RESULT_SUCCESS",
+          description: "正常終了",
+          value: 0,
+          type: "int"
+        },
+        {
+          key: "PROCESS_RESULT_WARNING",
+          description: "警告あり終了",
+          value: 1,
+          type: "int"
+        },
+        {
+          key: "PROCESS_RESULT_ERROR",
+          description: "異常終了",
+          value: 2,
+          type: "int"
+        },
+        {
+          key: "FROM_MAIL_ADDRESS",
+          description: "配信メール差出人",
+          value: "e-suteki_info@haseko.co.jp",
+          type: "String"
+        },
+        {
+          key: "MAX_PATH_LENGTH_CAN_DISPLAYED",
+          description: "ファイルパスの最大表示長",
+          value: 60,
+          type: "int"
+        },
+        {
+          key: "ELLIPSIS",
+          description: "省略を表す記号",
+          value: "...",
+          type: "String"
+        }
+      ]
+    },
+    UTL: {
+      description: "ユーティリティーで使用する定数"
+    }
+  },
+  VMN: {
+    description: "素敵ネット管理画面で使用する定数",
+    CON: {
+      description: "物件管理機能で使用する定数",
+      items: [
+        {
+          key: "BIAS_PERIOD_FIRST_ARRIVAL",
+          description: "施設予約先着対象期間の固定加算値",
+          value: 1,
+          type: "int"
+        }
+      ]
+    },
+    COG: {
+      description: "物件グループ管理機能で使用する定数"
+    },
+    HLD: {
+      description: "祝日管理機能で使用する定数"
+    },
+    ADM: {
+      description: "管理者ユーザ管理機能で使用する定数",
+      items: [
+        {
+          key: "ADMINISTRATOR_USER_SEARCH_RESULTS_LIMIT",
+          description: "管理者ユーザ検索件数の上限値",
+          value: 100,
+          type: "int"
+        }
+      ]
+    },
+    RES: {
+      description: "居住者ユーザ管理機能で使用する定数",
+      items: [
+        {
+          key: "RESIDENCE_USER_SEARCH_RESULTS_LIMIT",
+          description: "居住者ユーザ検索件数の上限値",
+          value: 100,
+          type: "int"
+        }
+      ]
+    },
+    FAC: {
+      description: "施設運営管理機能で使用する定数",
+      items: [
+        {
+          key: "MAX_NUMBER_OF_RESERVATIONS",
+          description: "施設の予約可能回数の上限値",
+          value: 99,
+          type: "int"
+        },
+        {
+          key: "MAX_NUMBER_OF_LOTTERY_APPLICATION",
+          description: "施設の抽選申込数の上限値",
+          value: 99,
+          type: "int"
+        },
+        {
+          key: "MAX_SELECTABLE_ADD_YEAR",
+          description: "施設予約の選択可能上限算出用の固定加算値(年)",
+          value: 1,
+          type: "int"
+        },
+        {
+          key: "MAX_SELECTABLE_MONTH",
+          description: "施設予約の選択可能上限の未来月",
+          value: 12,
+          type: "int"
+        },
+        {
+          key: "MIN_SELECTABLE_YEAR",
+          description: "施設予約の選択可能下限の過去年(システム稼働年)",
+          value: 2020,
+          type: "int"
+        },
+        {
+          key: "MAX_ORDER_OF_FACILITY_LIST_DISPLAY",
+          description: "施設の一覧表示順の上限値",
+          value: 999,
+          type: "int"
+        },
+        {
+          key: "DEFAULT_PRIORITY_VALUE_OF_RESERVATIONS",
+          description: "施設予約抽選優先度のデフォルト値",
+          value: 100,
+          type: "int"
+        },
+        {
+          key: "MAX_PRIORITY_VALUE_OF_RESERVATIONS",
+          description: "施設予約抽選優先度の上限値",
+          value: 999,
+          type: "int"
+        },
+        {
+          key: "MAX_PRICE",
+          description: "料金の上限値",
+          value: 999999,
+          type: "int"
+        },
+        {
+          key: "MAX_RESERVATION_ACCEPTANCE_START_MONTH",
+          description: "予約受付開始月の上限値",
+          value: 12,
+          type: "int"
+        },
+        {
+          key: "MAX_RESERVATION_ACCEPTANCE_DEADLINE_DAY",
+          description: "予約受付締切日の上限値",
+          value: 99,
+          type: "int"
+        },
+        {
+          key: "MAX_CANCELLATION_DEADLINE_DAY",
+          description: "キャンセル受付期限日の上限値",
+          value: 99,
+          type: "int"
+        },
+        {
+          key: "MAX_RESERVATION_TIME_LIMIT_HOUR",
+          description: "最大予約時間の上限値",
+          value: 24,
+          type: "int"
+        },
+        {
+          key: "MAX_PRICE_UNIT_TIME_HOUR",
+          description: "料金単位時間の上限値",
+          value: 99,
+          type: "int"
+        },
+        {
+          key: "MAX_PRICE_APPLICATION_START_TIME",
+          description: "料金単位時間の上限値",
+          value: 24,
+          type: "int"
+        },
+        {
+          key: "MAX_ORDER_OF_FACILITY_OPTION_LIST_DISPLAY",
+          description: "施設オプションの一覧表示順の上限値",
+          value: 99,
+          type: "int"
+        },
+        {
+          key: "MAX_NUMBER_OF_OPTION_QUANTITY",
+          description: "施設オプションの数量指定の上限値",
+          value: 999,
+          type: "int"
+        }
+      ]
+    },
+    NTF: {
+      description: "告知情報管理機能で使用する定数",
+      items: [
+        {
+          key: "MAX_SELECTABLE_ADD_YEAR",
+          description: "スケジュールカレンダーの選択可能上限算出用の固定加算値(年)",
+          value: 2,
+          type: "int"
+        },
+        {
+          key: "MAX_SELECTABLE_MONTH",
+          description: "スケジュールカレンダーの選択可能上限の未来月",
+          value: 3,
+          type: "int"
+        },
+        {
+          key: "MIN_SELECTABLE_YEAR",
+          description: "スケジュールカレンダーの選択可能下限の過去年(システム稼働年)",
+          value: 2020,
+          type: "int"
+        },
+        {
+          key: "MAX_ORDER_LIST_DISPLAY",
+          description: "告知情報の一覧表示順の上限値",
+          value: 999,
+          type: "int"
+        },
+        {
+          key: "MAX_NUMBER_OF_DOCUMENT_VERSION",
+          description: "告知情報に掲載する資料の版数上限値",
+          value: 999,
+          type: "int"
+        },
+        {
+          key: "THREAD_RETENTION_YEAR",
+          description: "情報交換掲示板スレッドの保持期間（年）",
+          value: 2,
+          type: "int"
+        }
+      ]
+    },
+    SYS: {
+      description: "システムサポート管理機能で使用する定数"
+    }
+  },
+  VRS: {
+    description: "素敵ネット居住者用画面で使用する定数",
+    CON: {
+      description: "物件管理機能で使用する定数"
+    },
+    COG: {
+      description: "物件グループ管理機能で使用する定数"
+    },
+    HLD: {
+      description: "祝日管理機能で使用する定数"
+    },
+    ADM: {
+      description: "管理者ユーザ管理機能で使用する定数"
+    },
+    RES: {
+      description: "居住者ユーザ管理機能で使用する定数",
+      items: [
+        {
+          key: "SUB_USER_ADD_LIMIT",
+          description: "サブユーザの追加上限数",
+          value: 5,
+          type: "int"
+        },
+        {
+          key: "MESSEAGE_LIST_NUMBER_FOR_TOP",
+          description: "素敵ネットTOPに表示するメッセージ一覧数",
+          value: 3,
+          type: "int"
+        },
+        {
+          key: "RESERVE_LIST_NUMBER_FOR_TOP",
+          description: "素敵ネットTOPに表示する予約確定一覧数",
+          value: 3,
+          type: "int"
+        },
+        {
+          key: "USER_REGIST_URL",
+          description: "素敵ネットユーザ登録用URL",
+          value: "residents/#/users/registration",
+          type: "String"
+        },
+        {
+          key: "USER_LOGIN_URL",
+          description: "素敵ネットユーザログインURL",
+          value: "residents/#/login",
+          type: "String"
+        },
+        {
+          key: "USER_LOGIN_PROCEDURE_URL",
+          description: "素敵ネットユーザログイン手順URL",
+          value: "residents/#/login_procedure",
+          type: "String"
+        },
+        {
+          key: "USER_FORGOT_PASSWORD_URL",
+          description: "素敵ネットパスワード再設定URL",
+          value: "residents/#/forgotpassword",
+          type: "String"
+        },
+        {
+          key: "USER_CHANGE_MAILADDRESS_URL",
+          description: "素敵ネットメールアドレス変更再URL",
+          value: "residents/#/changemail",
+          type: "String"
+        }
+      ]
+    },
+    FAC: {
+      description: "施設運営管理機能で使用する定数",
+      items: [
+        {
+          key: "MIN_SELECTABLE_SUB_MONTH",
+          description: "施設予約の選択可能下限算出用の固定減算値(月)",
+          value: 2,
+          type: "int"
+        },
+        {
+          key: "USER_RESERVATION_LIST_URL",
+          description: "あなたの予約状況URL",
+          value: "residents/#/facilities/reservationlist",
+          type: "String"
+        }
+      ]
+    },
+    NTF: {
+      description: "告知情報管理機能で使用する定数",
+      items: [
+        {
+          key: "MAX_NUMBER_OF_EVENT_CALENDAR",
+          description: "カレンダー参照に表示する１日のイベント表示件数の上限値",
+          value: 2,
+          type: "int"
+        },
+        {
+          key: "USER_BOARD_URL",
+          description: "情報交換掲示板URL",
+          value: "residents/#/board",
+          type: "String"
+        },
+        {
+          key: "EXPIRATION_DATE",
+          description: "情報訪韓掲示板スレッドの有効日数",
+          value: 547,
+          type: "int"
+        }
+      ]
+    },
+    CMB: {
+      description: "コミュニケーションボード機能で使用する定数",
+      items: [
+        {
+          key: "MESSEAGE_LIMIT_DISPLAY",
+          description: "メッセージ参照画面に表示するメッセージ件数",
+          value: 1,
+          type: "int"
+        },
+        {
+          key: "MESSEAGE_LIMIT_OFFSET",
+          description: "メッセージ参照画面に表示するメッセージの検索開始位置の上限値",
+          value: 3,
+          type: "int"
+        },
+        {
+          key: "MESSEAGE_LIMIT_FACILITY_LIMIT_DISPLAY",
+          description: "施設の予約状況画面に表示する施設件数",
+          value: 5,
+          type: "int"
+        },
+        {
+          key: "MAX_NUMBER_OF_EVENT_CALENDAR",
+          description: "カレンダー参照に表示する１日のイベント表示件数の上限値",
+          value: 3,
+          type: "int"
+        },
+        {
+          key: "JOURNAL_DIGEST_PATTERN_NUM",
+          description: "誌面ダイジェストで表示する動画のパターン数",
+          value: 6,
+          type: "int"
+        }
+      ]
+    },
+    SYS: {
+      description: "システムサポート管理機能で使用する定数",
+      items: [
+        {
+          key: "MAINTENANCE_START_DATETIME",
+          description: "システムメンテナンス開始日時",
+          value: "2022/01/01 00:00:00",
+          type: "String"
+        },
+        {
+          key: "MAINTENANCE_END_DATETIME",
+          description: "システムメンテナンス終了日時",
+          value: "2022/01/02 23:59:59",
+          type: "String"
+        },
+        {
+          key: "CONTACT_WEB_URL_MANSION",
+          description: "お問い合わせURL（マンション）",
+          value: "https://reg34.smp.ne.jp/regist/is?SMPFORM=ncmf-oekdt-79ad6ac309982551ddf9f4be26a3dfe5",
+          type: "String"
+        },
+        {
+          key: "CONTACT_WEB_URL_SUTEKI",
+          description: "お問い合わせURL（素敵ネット）",
+          value: "https://reg34.smp.ne.jp/regist/is?SMPFORM=ncmf-oekdm-9329195fea6c572ece6752134200aeb4",
+          type: "String"
+        }
+      ]
+    }
+  },
+  BAT: {
+    description: "素敵ネットバッチで使用する定数",
+    CON: {
+      description: "物件管理機能で使用する定数"
+    },
+    COG: {
+      description: "物件グループ管理機能で使用する定数"
+    },
+    HLD: {
+      description: "祝日管理機能で使用する定数",
+      items: [
+        {
+          key: "HOLIDAYS_JP_API_URL",
+          description: "Holidays JP APIのURL",
+          value: "https://holidays-jp.github.io/api/v1/date.json",
+          type: "String"
+        }
+      ]
+    },
+    ADM: {
+      description: "管理者ユーザ管理機能で使用する定数"
+    },
+    RES: {
+      description: "居住者ユーザ管理機能で使用する定数"
+    },
+    FAC: {
+      description: "施設運営管理機能で使用する定数"
+    },
+    NTF: {
+      description: "告知情報管理機能で使用する定数"
+    },
+    SYS: {
+      description: "システムサポート管理機能で使用する定数"
+    }
+  },
+  API: {
+    description: "素敵ネットAPIで使用する定数",
+    RES: {
+      description: "居住者ユーザ管理機能で使用する定数",
+      items: [
+        {
+          key: "FLP_API_COMPANY_CD",
+          description: "FLP連携APIパラメータの企業コード",
+          value: "？？？？？？？？",
+          type: "String"
+        },
+        {
+          key: "FLP_API_KEY",
+          description: "FLP連携APIパラメータのAPIキー",
+          value: "？？？？？？？？",
+          type: "String"
+        }
+      ]
+    },
+    FAC: {
+      description: "",
+      items: [
+        {
+          key: "MAX_NUMBER_OF_RESERVATION_INFO",
+          description: "施設予約情報取得APIにて返却する施設予約上限",
+          value: 100,
+          type: "int"
+        }
+      ]
+    }
+  }
+}

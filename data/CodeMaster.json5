@@ -1,0 +1,3060 @@
+{
+  HAVE_OR_NOT: {
+    name: "ありなし",
+    description: '二値選択「あり/なし」の共通コード。',
+    items: {
+      NOT: {
+        label: "なし",
+        value: "0",
+        order: 1
+      },
+      HAVE: {
+        label: "あり",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  VALID_OR_NOT: {
+    name: "有効無効",
+    description: '二値選択「有効/無効」の共通コード。',
+    items: {
+      NOT: {
+        label: "無効",
+        value: "0",
+        order: 1
+      },
+      VALID: {
+        label: "有効",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  PREFECTURES_MASTER: {
+    name: "都道府県マスタ",
+    description: '都道府県マスタ。値はJIS X 0401に基づく２桁の都道府県コードとする。',
+    items: {
+      HOKKAIDO: {
+        label: "北海道",
+        value: "01",
+        order: 1
+      },
+      AOMORI: {
+        label: "青森県",
+        value: "02",
+        order: 2
+      },
+      IWATE: {
+        label: "岩手県",
+        value: "03",
+        order: 3
+      },
+      MIYAGI: {
+        label: "宮城県",
+        value: "04",
+        order: 4
+      },
+      AKITA: {
+        label: "秋田県",
+        value: "05",
+        order: 5
+      },
+      YAMAGATA: {
+        label: "山形県",
+        value: "06",
+        order: 6
+      },
+      FUKUSHIMA: {
+        label: "福島県",
+        value: "07",
+        order: 7
+      },
+      IBARAKI: {
+        label: "茨城県",
+        value: "08",
+        order: 8
+      },
+      TOCHIGI: {
+        label: "栃木県",
+        value: "09",
+        order: 9
+      },
+      GUNMA: {
+        label: "群馬県",
+        value: "10",
+        order: 10
+      },
+      SAITAMA: {
+        label: "埼玉県",
+        value: "11",
+        order: 11
+      },
+      CHIBA: {
+        label: "千葉県",
+        value: "12",
+        order: 12
+      },
+      TOKYO: {
+        label: "東京都",
+        value: "13",
+        order: 13
+      },
+      KANAGAWA: {
+        label: "神奈川県",
+        value: "14",
+        order: 14
+      },
+      NIIGATA: {
+        label: "新潟県",
+        value: "15",
+        order: 15
+      },
+      TOYAMA: {
+        label: "富山県",
+        value: "16",
+        order: 16
+      },
+      ISHIKAWA: {
+        label: "石川県",
+        value: "17",
+        order: 17
+      },
+      FUKUI: {
+        label: "福井県",
+        value: "18",
+        order: 18
+      },
+      YAMANASHI: {
+        label: "山梨県",
+        value: "19",
+        order: 19
+      },
+      NAGANO: {
+        label: "長野県",
+        value: "20",
+        order: 20
+      },
+      GIFU: {
+        label: "岐阜県",
+        value: "21",
+        order: 21
+      },
+      SHIZUOKA: {
+        label: "静岡県",
+        value: "22",
+        order: 22
+      },
+      AICHI: {
+        label: "愛知県",
+        value: "23",
+        order: 23
+      },
+      MIE: {
+        label: "三重県",
+        value: "24",
+        order: 24
+      },
+      SHIGA: {
+        label: "滋賀県",
+        value: "25",
+        order: 25
+      },
+      KYOTO: {
+        label: "京都府",
+        value: "26",
+        order: 26
+      },
+      OSAKA: {
+        label: "大阪府",
+        value: "27",
+        order: 27
+      },
+      HYOGO: {
+        label: "兵庫県",
+        value: "28",
+        order: 28
+      },
+      NARA: {
+        label: "奈良県",
+        value: "29",
+        order: 29
+      },
+      WAKAYAMA: {
+        label: "和歌山県",
+        value: "30",
+        order: 30
+      },
+      TOTTORI: {
+        label: "鳥取県",
+        value: "31",
+        order: 31
+      },
+      SHIMANE: {
+        label: "島根県",
+        value: "32",
+        order: 32
+      },
+      OKAYAMA: {
+        label: "岡山県",
+        value: "33",
+        order: 33
+      },
+      HIROSHIMA: {
+        label: "広島県",
+        value: "34",
+        order: 34
+      },
+      YAMAGUCHI: {
+        label: "山口県",
+        value: "35",
+        order: 35
+      },
+      TOKUSHIMA: {
+        label: "徳島県",
+        value: "36",
+        order: 36
+      },
+      KAGAWA: {
+        label: "香川県",
+        value: "37",
+        order: 37
+      },
+      EHIME: {
+        label: "愛媛県",
+        value: "38",
+        order: 38
+      },
+      KOCHI: {
+        label: "高知県",
+        value: "39",
+        order: 39
+      },
+      FUKUOKA: {
+        label: "福岡県",
+        value: "40",
+        order: 40
+      },
+      SAGA: {
+        label: "佐賀県",
+        value: "41",
+        order: 41
+      },
+      NAGASAKI: {
+        label: "長崎県",
+        value: "42",
+        order: 42
+      },
+      KUMAMOTO: {
+        label: "熊本県",
+        value: "43",
+        order: 43
+      },
+      OITA: {
+        label: "大分県",
+        value: "44",
+        order: 44
+      },
+      MIYAZAKI: {
+        label: "宮崎県",
+        value: "45",
+        order: 45
+      },
+      KAGOSHIMA: {
+        label: "鹿児島県",
+        value: "46",
+        order: 46
+      },
+      OKINAWA: {
+        label: "沖縄県",
+        value: "47",
+        order: 47
+      }
+    }
+  },
+  USER_DISPLAY_ITEMS: {
+    name: "ユーザー表示項目",
+    description: '施設予約または掲示板にて表示するユーザー情報の項目。',
+    items: {
+      BOTH: {
+        label: "部屋番号 ＋ 氏名",
+        value: "1",
+        order: 1
+      },
+      ROOM: {
+        label: "部屋番号",
+        value: "2",
+        order: 2
+      },
+      NAME: {
+        label: "氏名",
+        value: "3",
+        order: 3
+      },
+      NONE: {
+        label: "非表示",
+        value: "4",
+        order: 4
+      }
+    }
+  },
+  FACILITY_RESERVATION_DRAWING_START_DATE: {
+    name: "施設予約抽選開始日",
+    description: '施設予約の抽選開始日候補。',
+    items: {
+      VOL_1: {
+        label: "1",
+        value: "1",
+        order: 1
+      },
+      VOL_2: {
+        label: "2",
+        value: "2",
+        order: 2
+      },
+      VOL_3: {
+        label: "3",
+        value: "3",
+        order: 3
+      },
+      VOL_4: {
+        label: "4",
+        value: "4",
+        order: 4
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 5
+      }
+    }
+  },
+  FACILITY_RESERVATION_DRAWING_END_DATE: {
+    name: "施設予約抽選終了日",
+    description: '施設予約の抽選終了日候補。',
+    items: {
+      VOL_2: {
+        label: "2",
+        value: "2",
+        order: 1
+      },
+      VOL_3: {
+        label: "3",
+        value: "3",
+        order: 2
+      },
+      VOL_4: {
+        label: "4",
+        value: "4",
+        order: 3
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 4
+      },
+      VOL_6: {
+        label: "6",
+        value: "6",
+        order: 5
+      },
+      VOL_7: {
+        label: "7",
+        value: "7",
+        order: 6
+      }
+    }
+  },
+  FACILITY_RESERVATION_CONFIRMED_DATE: {
+    name: "施設予約確定期日",
+    description: '施設予約の抽選確定期日候補。',
+    items: {
+      VOL_8: {
+        label: "8",
+        value: "8",
+        order: 1
+      },
+      VOL_9: {
+        label: "9",
+        value: "9",
+        order: 2
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 3
+      },
+      VOL_11: {
+        label: "11",
+        value: "11",
+        order: 4
+      },
+      VOL_12: {
+        label: "12",
+        value: "12",
+        order: 5
+      },
+      VOL_13: {
+        label: "13",
+        value: "13",
+        order: 6
+      },
+      VOL_14: {
+        label: "14",
+        value: "14",
+        order: 7
+      },
+      VOL_15: {
+        label: "15",
+        value: "15",
+        order: 8
+      }
+    }
+  },
+  AVAILABLE_SITE: {
+    name: "利用サイト",
+    description: '管理画面か、居住者用画面かを表す。',
+    items: {
+      ADMIN: {
+        label: "管理画面",
+        value: "1",
+        order: 1
+      },
+      RESIDENT: {
+        label: "居住者用画面",
+        value: "2",
+        order: 2
+      }
+    }
+  },
+  AVAILABLE_OR_NOT: {
+    name: "可不可",
+    description: '二値選択「可/不可」の共通コード。',
+    items: {
+      AVAILABLE: {
+        label: "不可",
+        value: "0",
+        order: 1
+      },
+      UNAVAILABLE: {
+        label: "可能",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  SEX_MASTER: {
+    name: "性別",
+    description: '性別マスタ。',
+    items: {
+      MALE: {
+        label: "男性",
+        value: "0",
+        order: 1
+      },
+      FEMALE: {
+        label: "女性",
+        value: "1",
+        order: 2
+      },
+      UNKNOWN: {
+        label: "指定しない",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  HOURS: {
+    name: "時",
+    description: '「時」に指定可能な値。0～23まで。',
+    items: {
+      VOL_0: {
+        label: "0",
+        value: "0",
+        order: 1
+      },
+      VOL_1: {
+        label: "1",
+        value: "1",
+        order: 2
+      },
+      VOL_2: {
+        label: "2",
+        value: "2",
+        order: 3
+      },
+      VOL_3: {
+        label: "3",
+        value: "3",
+        order: 4
+      },
+      VOL_4: {
+        label: "4",
+        value: "4",
+        order: 5
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 6
+      },
+      VOL_6: {
+        label: "6",
+        value: "6",
+        order: 7
+      },
+      VOL_7: {
+        label: "7",
+        value: "7",
+        order: 8
+      },
+      VOL_8: {
+        label: "8",
+        value: "8",
+        order: 9
+      },
+      VOL_9: {
+        label: "9",
+        value: "9",
+        order: 10
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 11
+      },
+      VOL_11: {
+        label: "11",
+        value: "11",
+        order: 12
+      },
+      VOL_12: {
+        label: "12",
+        value: "12",
+        order: 13
+      },
+      VOL_13: {
+        label: "13",
+        value: "13",
+        order: 14
+      },
+      VOL_14: {
+        label: "14",
+        value: "14",
+        order: 15
+      },
+      VOL_15: {
+        label: "15",
+        value: "15",
+        order: 16
+      },
+      VOL_16: {
+        label: "16",
+        value: "16",
+        order: 17
+      },
+      VOL_17: {
+        label: "17",
+        value: "17",
+        order: 18
+      },
+      VOL_18: {
+        label: "18",
+        value: "18",
+        order: 19
+      },
+      VOL_19: {
+        label: "19",
+        value: "19",
+        order: 20
+      },
+      VOL_20: {
+        label: "20",
+        value: "20",
+        order: 21
+      },
+      VOL_21: {
+        label: "21",
+        value: "21",
+        order: 22
+      },
+      VOL_22: {
+        label: "22",
+        value: "22",
+        order: 23
+      },
+      VOL_23: {
+        label: "23",
+        value: "23",
+        order: 24
+      }
+    }
+  },
+  MINUTS: {
+    name: "分",
+    description: '「分」に指定可能な値。0～59まで。',
+    items: {
+      VOL_0: {
+        label: "0",
+        value: "0",
+        order: 1
+      },
+      VOL_1: {
+        label: "1",
+        value: "1",
+        order: 2
+      },
+      VOL_2: {
+        label: "2",
+        value: "2",
+        order: 3
+      },
+      VOL_3: {
+        label: "3",
+        value: "3",
+        order: 4
+      },
+      VOL_4: {
+        label: "4",
+        value: "4",
+        order: 5
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 6
+      },
+      VOL_6: {
+        label: "6",
+        value: "6",
+        order: 7
+      },
+      VOL_7: {
+        label: "7",
+        value: "7",
+        order: 8
+      },
+      VOL_8: {
+        label: "8",
+        value: "8",
+        order: 9
+      },
+      VOL_9: {
+        label: "9",
+        value: "9",
+        order: 10
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 11
+      },
+      VOL_11: {
+        label: "11",
+        value: "11",
+        order: 12
+      },
+      VOL_12: {
+        label: "12",
+        value: "12",
+        order: 13
+      },
+      VOL_13: {
+        label: "13",
+        value: "13",
+        order: 14
+      },
+      VOL_14: {
+        label: "14",
+        value: "14",
+        order: 15
+      },
+      VOL_15: {
+        label: "15",
+        value: "15",
+        order: 16
+      },
+      VOL_16: {
+        label: "16",
+        value: "16",
+        order: 17
+      },
+      VOL_17: {
+        label: "17",
+        value: "17",
+        order: 18
+      },
+      VOL_18: {
+        label: "18",
+        value: "18",
+        order: 19
+      },
+      VOL_19: {
+        label: "19",
+        value: "19",
+        order: 20
+      },
+      VOL_20: {
+        label: "20",
+        value: "20",
+        order: 21
+      },
+      VOL_21: {
+        label: "21",
+        value: "21",
+        order: 22
+      },
+      VOL_22: {
+        label: "22",
+        value: "22",
+        order: 23
+      },
+      VOL_23: {
+        label: "23",
+        value: "23",
+        order: 24
+      },
+      VOL_24: {
+        label: "24",
+        value: "24",
+        order: 25
+      },
+      VOL_25: {
+        label: "25",
+        value: "25",
+        order: 26
+      },
+      VOL_26: {
+        label: "26",
+        value: "26",
+        order: 27
+      },
+      VOL_27: {
+        label: "27",
+        value: "27",
+        order: 28
+      },
+      VOL_28: {
+        label: "28",
+        value: "28",
+        order: 29
+      },
+      VOL_29: {
+        label: "29",
+        value: "29",
+        order: 30
+      },
+      VOL_30: {
+        label: "30",
+        value: "30",
+        order: 31
+      },
+      VOL_31: {
+        label: "31",
+        value: "31",
+        order: 32
+      },
+      VOL_32: {
+        label: "32",
+        value: "32",
+        order: 33
+      },
+      VOL_33: {
+        label: "33",
+        value: "33",
+        order: 34
+      },
+      VOL_34: {
+        label: "34",
+        value: "34",
+        order: 35
+      },
+      VOL_35: {
+        label: "35",
+        value: "35",
+        order: 36
+      },
+      VOL_36: {
+        label: "36",
+        value: "36",
+        order: 37
+      },
+      VOL_37: {
+        label: "37",
+        value: "37",
+        order: 38
+      },
+      VOL_38: {
+        label: "38",
+        value: "38",
+        order: 39
+      },
+      VOL_39: {
+        label: "39",
+        value: "39",
+        order: 40
+      },
+      VOL_40: {
+        label: "40",
+        value: "40",
+        order: 41
+      },
+      VOL_41: {
+        label: "41",
+        value: "41",
+        order: 42
+      },
+      VOL_42: {
+        label: "42",
+        value: "42",
+        order: 43
+      },
+      VOL_43: {
+        label: "43",
+        value: "43",
+        order: 44
+      },
+      VOL_44: {
+        label: "44",
+        value: "44",
+        order: 45
+      },
+      VOL_45: {
+        label: "45",
+        value: "45",
+        order: 46
+      },
+      VOL_46: {
+        label: "46",
+        value: "46",
+        order: 47
+      },
+      VOL_47: {
+        label: "47",
+        value: "47",
+        order: 48
+      },
+      VOL_48: {
+        label: "48",
+        value: "48",
+        order: 49
+      },
+      VOL_49: {
+        label: "49",
+        value: "49",
+        order: 50
+      },
+      VOL_50: {
+        label: "50",
+        value: "50",
+        order: 51
+      },
+      VOL_51: {
+        label: "51",
+        value: "51",
+        order: 52
+      },
+      VOL_52: {
+        label: "52",
+        value: "52",
+        order: 53
+      },
+      VOL_53: {
+        label: "53",
+        value: "53",
+        order: 54
+      },
+      VOL_54: {
+        label: "54",
+        value: "54",
+        order: 55
+      },
+      VOL_55: {
+        label: "55",
+        value: "55",
+        order: 56
+      },
+      VOL_56: {
+        label: "56",
+        value: "56",
+        order: 57
+      },
+      VOL_57: {
+        label: "57",
+        value: "57",
+        order: 58
+      },
+      VOL_58: {
+        label: "58",
+        value: "58",
+        order: 59
+      },
+      VOL_59: {
+        label: "59",
+        value: "59",
+        order: 60
+      }
+    }
+  },
+  UNIT_TIME: {
+    name: "単位時間(単位)",
+    description: '料金単位時間の単位。',
+    items: {
+      MINUTS: {
+        label: "分",
+        value: "0",
+        order: 1
+      },
+      TIME: {
+        label: "時",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  RESERVATION_ACCEPTABILITY_FOR_RESIDENT: {
+    name: "居住者予約可否",
+    description: '施設予約が可能な範囲。',
+    items: {
+      BOTH: {
+        label: "居住者＋代行者",
+        value: "1",
+        order: 1
+      },
+      AGENT: {
+        label: "代行者のみ",
+        value: "0",
+        order: 2
+      }
+    }
+  },
+  UNIT_OF_FACILITY_RESERVATION_RECEPTION_START_TIME: {
+    name: "施設予約受付開始単位",
+    description: '施設の予約受付の開始時間単位。',
+    items: {
+      UNSPECIFIED: {
+        label: "制限なし",
+        value: "0",
+        order: 1
+      },
+      SPECIFIED_MONTH: {
+        label: "月指定",
+        value: "1",
+        order: 2
+      },
+      SPECIFIED_DAY: {
+        label: "日指定",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  DEADLINE_UNIT_OF_RESERVATION_AND_CANCEL: {
+    name: "予約締切・キャンセル指定単位",
+    description: '期間の指定時、当日を含むかどうかの選択。',
+    items: {
+      UNSPECIFIED: {
+        label: "制限なし",
+        value: "0",
+        order: 1
+      },
+      SPECIFIED_DAY: {
+        label: "日指定",
+        value: "1",
+        order: 2
+      },
+      SPECIFIED_TIME: {
+        label: "当日時間指定",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  CLEANING_TIME: {
+    name: "清掃時間",
+    description: '清掃時間の候補。',
+    items: {
+      VOL_0: {
+        label: "0",
+        value: "0",
+        order: 1
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 2
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 3
+      },
+      VOL_15: {
+        label: "15",
+        value: "15",
+        order: 4
+      },
+      VOL_20: {
+        label: "20",
+        value: "20",
+        order: 5
+      },
+      VOL_25: {
+        label: "25",
+        value: "25",
+        order: 6
+      },
+      VOL_30: {
+        label: "30",
+        value: "30",
+        order: 7
+      },
+      VOL_35: {
+        label: "35",
+        value: "35",
+        order: 8
+      },
+      VOL_40: {
+        label: "40",
+        value: "40",
+        order: 9
+      },
+      VOL_45: {
+        label: "45",
+        value: "45",
+        order: 10
+      },
+      VOL_50: {
+        label: "50",
+        value: "50",
+        order: 11
+      },
+      VOL_55: {
+        label: "55",
+        value: "55",
+        order: 12
+      },
+      VOL_60: {
+        label: "60",
+        value: "60",
+        order: 13
+      }
+    }
+  },
+  PUBLISHING_SETTING: {
+    name: "公開設定",
+    description: '公開設定の候補。',
+    items: {
+      PUBLIC: {
+        label: "公開",
+        value: "1",
+        order: 1
+      },
+      PRIVATE: {
+        label: "非公開",
+        value: "0",
+        order: 2
+      }
+    }
+  },
+  HOURS_24: {
+    name: "時(24)",
+    description: '「時」に指定可能な値。0～24まで。',
+    items: {
+      VOL_0: {
+        label: "0",
+        value: "0",
+        order: 1
+      },
+      VOL_1: {
+        label: "1",
+        value: "1",
+        order: 2
+      },
+      VOL_2: {
+        label: "2",
+        value: "2",
+        order: 3
+      },
+      VOL_3: {
+        label: "3",
+        value: "3",
+        order: 4
+      },
+      VOL_4: {
+        label: "4",
+        value: "4",
+        order: 5
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 6
+      },
+      VOL_6: {
+        label: "6",
+        value: "6",
+        order: 7
+      },
+      VOL_7: {
+        label: "7",
+        value: "7",
+        order: 8
+      },
+      VOL_8: {
+        label: "8",
+        value: "8",
+        order: 9
+      },
+      VOL_9: {
+        label: "9",
+        value: "9",
+        order: 10
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 11
+      },
+      VOL_11: {
+        label: "11",
+        value: "11",
+        order: 12
+      },
+      VOL_12: {
+        label: "12",
+        value: "12",
+        order: 13
+      },
+      VOL_13: {
+        label: "13",
+        value: "13",
+        order: 14
+      },
+      VOL_14: {
+        label: "14",
+        value: "14",
+        order: 15
+      },
+      VOL_15: {
+        label: "15",
+        value: "15",
+        order: 16
+      },
+      VOL_16: {
+        label: "16",
+        value: "16",
+        order: 17
+      },
+      VOL_17: {
+        label: "17",
+        value: "17",
+        order: 18
+      },
+      VOL_18: {
+        label: "18",
+        value: "18",
+        order: 19
+      },
+      VOL_19: {
+        label: "19",
+        value: "19",
+        order: 20
+      },
+      VOL_20: {
+        label: "20",
+        value: "20",
+        order: 21
+      },
+      VOL_21: {
+        label: "21",
+        value: "21",
+        order: 22
+      },
+      VOL_22: {
+        label: "22",
+        value: "22",
+        order: 23
+      },
+      VOL_23: {
+        label: "23",
+        value: "23",
+        order: 24
+      },
+      VOL_24: {
+        label: "24",
+        value: "24",
+        order: 25
+      }
+    }
+  },
+  NUMBER_OF_TIMES_TO_STAY: {
+    name: "宿泊可能数",
+    description: '宿泊可能な日数。',
+    items: {
+      VOL_1: {
+        label: "1",
+        value: "1",
+        order: 1
+      },
+      VOL_2: {
+        label: "2",
+        value: "2",
+        order: 2
+      }
+    }
+  },
+  UNIT_OF_BUSINESS_SCHEDULE: {
+    name: "営業スケジュール単位",
+    description: '営業スケジュールの単位。',
+    items: {
+      SUNDAY: {
+        label: "日曜日",
+        value: "1",
+        order: 1
+      },
+      MONDAY: {
+        label: "月曜日",
+        value: "2",
+        order: 2
+      },
+      TUESDAY: {
+        label: "火曜日",
+        value: "3",
+        order: 3
+      },
+      WEDNESDAY: {
+        label: "水曜日",
+        value: "4",
+        order: 4
+      },
+      THURSDAY: {
+        label: "木曜日",
+        value: "5",
+        order: 5
+      },
+      FRIDAY: {
+        label: "金曜日",
+        value: "6",
+        order: 6
+      },
+      SATURDAY: {
+        label: "土曜日",
+        value: "7",
+        order: 7
+      },
+      HOLIDAY: {
+        label: "祝日",
+        value: "8",
+        order: 8
+      },
+      ALL_DAYS: {
+        label: "全ての曜日",
+        value: "9",
+        order: 9
+      },
+      DATE_STRADDLE: {
+        label: "曜日指定なし・日またぎ",
+        value: "10",
+        order: 10
+      }
+    }
+  },
+  RESERVATION_TYPE: {
+    name: "予約種別",
+    description: '施設予約の予約の種別。',
+    items: {
+      FIRST_COME: {
+        label: "先着予約",
+        value: "0",
+        order: 1
+      },
+      LOTTERY: {
+        label: "抽選予約",
+        value: "1",
+        order: 2
+      },
+      ADDITIONAL_CHARGE: {
+        label: "追加課金",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  RESERVATION_TIME_UNIT_MINUTES: {
+    name: "予約時間単位(分)",
+    description: '施設予約時間の指定単位。分の指定は5分単位。',
+    items: {
+      VOL_0: {
+        label: "0",
+        value: "0",
+        order: 1
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 2
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 3
+      },
+      VOL_15: {
+        label: "15",
+        value: "15",
+        order: 4
+      },
+      VOL_20: {
+        label: "20",
+        value: "20",
+        order: 5
+      },
+      VOL_25: {
+        label: "25",
+        value: "25",
+        order: 6
+      },
+      VOL_30: {
+        label: "30",
+        value: "30",
+        order: 7
+      },
+      VOL_35: {
+        label: "35",
+        value: "35",
+        order: 8
+      },
+      VOL_40: {
+        label: "40",
+        value: "40",
+        order: 9
+      },
+      VOL_45: {
+        label: "45",
+        value: "45",
+        order: 10
+      },
+      VOL_50: {
+        label: "50",
+        value: "50",
+        order: 11
+      },
+      VOL_55: {
+        label: "55",
+        value: "55",
+        order: 12
+      }
+    }
+  },
+  PAYMENT_TYPE: {
+    name: "お支払方法",
+    description: '施設予約のお支払い方法の候補。',
+    items: {
+      ADMIN_TRANSFER_ACCOUNT: {
+        label: "管理費口座振替",
+        value: "0",
+        order: 1
+      },
+      CASH: {
+        label: "現金",
+        value: "1",
+        order: 2
+      },
+      SERVICE_TRANSFER_ACCOUNT: {
+        label: "サービス口座振替",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  CASH_PAYMENT_STATUS: {
+    name: "現金支払ステータス",
+    description: '施設予約の現金支払いの状態。',
+    items: {
+      YET_PAID: {
+        label: "未",
+        value: "0",
+        order: 1
+      },
+      PAID: {
+        label: "済",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  FACILITY_RESERVATION_CLASSIFICATION: {
+    name: "施設予約区分",
+    description: '施設予約の予約者区分。「居住者/代行/管理者」',
+    items: {
+      RESIDENT: {
+        label: "居住者予約",
+        value: "1",
+        order: 1
+      },
+      AGENT: {
+        label: "代行予約",
+        value: "2",
+        order: 2
+      },
+      ADMIN: {
+        label: "管理者予約",
+        value: "3",
+        order: 3
+      }
+    }
+  },
+  RESERVATION_STATUS: {
+    name: "予約ステータス",
+    description: '施設予約の予約ステータス。',
+    items: {
+      BEFORE_LOTTERY: {
+        label: "抽選前",
+        value: "0",
+        order: 1
+      },
+      WAITING_FOR_CONFIRMATION: {
+        label: "確定待ち",
+        value: "1",
+        order: 2
+      },
+      ELECTION: {
+        label: "確定",
+        value: "2",
+        order: 3
+      },
+      DIS_ELECTION: {
+        label: "落選",
+        value: "3",
+        order: 4
+      },
+      CANCEL: {
+        label: "キャンセル",
+        value: "9",
+        order: 5
+      }
+    }
+  },
+  RESIDENT_STATUS: {
+    name: "居住者ステータス",
+    description: '居住者のステータス。',
+    items: {
+      UNREGISTERED: {
+        label: "未登録",
+        value: "0",
+        order: 1
+      },
+      REGISTERED: {
+        label: "登録済",
+        value: "1",
+        order: 2
+      },
+      ABOLITION: {
+        label: "廃止",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  CHARGE_UNIT: {
+    name: "料金単位",
+    description: '料金/時間の単位コード。',
+    items: {
+      MINUTE: {
+        label: "分",
+        value: "0",
+        order: 1
+      },
+      TIME: {
+        label: "時間",
+        value: "1",
+        order: 2
+      },
+      FIXED: {
+        label: "固定料金",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  MANAGER_STATUS: {
+    name: "管理者ステータス",
+    description: '管理者のステータス。',
+    items: {
+      LOGIN_FAIL: {
+        label: "ログイン不可",
+        value: "0",
+        order: 1
+      },
+      VALID: {
+        label: "有効",
+        value: "1",
+        order: 2
+      },
+      DELETE: {
+        label: "削除",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  VALID_OR_NOT_CHECK: {
+    name: "有効無効（チェック）",
+    description: '二値選択「有効/無効」の共通コード。',
+    items: {
+      /** ✓ */
+      VALID: {
+        label: "✓",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  RESERVATION_TIME_UNIT_MINUTES_NOT0: {
+    name: "予約時間単位(分)0なし",
+    description: '施設予約時間の指定単位。分の指定は5分単位。',
+    items: {
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 1
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 2
+      },
+      VOL_15: {
+        label: "15",
+        value: "15",
+        order: 3
+      },
+      VOL_20: {
+        label: "20",
+        value: "20",
+        order: 4
+      },
+      VOL_25: {
+        label: "25",
+        value: "25",
+        order: 5
+      },
+      VOL_30: {
+        label: "30",
+        value: "30",
+        order: 6
+      },
+      VOL_35: {
+        label: "35",
+        value: "35",
+        order: 7
+      },
+      VOL_40: {
+        label: "40",
+        value: "40",
+        order: 8
+      },
+      VOL_45: {
+        label: "45",
+        value: "45",
+        order: 9
+      },
+      VOL_50: {
+        label: "50",
+        value: "50",
+        order: 10
+      },
+      VOL_55: {
+        label: "55",
+        value: "55",
+        order: 11
+      }
+    }
+  },
+  EVENT_CATEGORY: {
+    name: "イベントカテゴリ",
+    description: 'イベントのカテゴリ。',
+    items: {
+      TRASH_DAY: {
+        label: "ごみの日",
+        value: "0",
+        order: 1
+      },
+      MAINTENANCE: {
+        label: "メンテナンス",
+        value: "1",
+        order: 2
+      },
+      CLEANING: {
+        label: "清掃",
+        value: "2",
+        order: 3
+      },
+      OTHER_EVENT: {
+        label: "その他イベント",
+        value: "3",
+        order: 4
+      },
+      OTHER: {
+        label: "その他",
+        value: "4",
+        order: 5
+      }
+    }
+  },
+  EVENT_ITEM_GARBAGE_DAY: {
+    name: "イベント項目-ごみの日",
+    description: 'イベント項目のうち、ごみの日に分類するもの。',
+    items: {
+      BURNABLE: {
+        label: "可燃ごみ",
+        value: "0",
+        order: 1
+      },
+      RECYCLE: {
+        label: "リサイクル",
+        value: "1",
+        order: 2
+      },
+      BULK: {
+        label: "粗大ごみ",
+        value: "2",
+        order: 3
+      },
+      DANGER: {
+        label: "危険ごみ",
+        value: "3",
+        order: 4
+      },
+      PET: {
+        label: "ペットボトル",
+        value: "4",
+        order: 5
+      },
+      CAN_BOTTLE: {
+        label: "カンビン",
+        value: "5",
+        order: 6
+      },
+      NON_BURNABLE: {
+        label: "不燃ごみ",
+        value: "6",
+        order: 7
+      }
+    }
+  },
+  EVENT_ITEM_MAINTENANCE: {
+    name: "イベント項目-メンテナンス",
+    description: 'イベント項目のうち、メンテナンスに分類するもの。',
+    items: {
+      SYSTEM: {
+        label: "システムメンテナンス",
+        value: "0",
+        order: 1
+      },
+      SOFTSCAPE: {
+        label: "植栽メンテナンス",
+        value: "1",
+        order: 2
+      },
+      CONDITION: {
+        label: "整備メンテナンス",
+        value: "2",
+        order: 3
+      },
+      EQUIPMENT: {
+        label: "設備点検",
+        value: "3",
+        order: 4
+      },
+      FIREFIGHTING_EQUIPMENT: {
+        label: "消防設備点検",
+        value: "4",
+        order: 5
+      },
+      PARK: {
+        label: "駐車場点検",
+        value: "5",
+        order: 6
+      },
+      ELEVATOR: {
+        label: "EV点検",
+        value: "6",
+        order: 7
+      }
+    }
+  },
+  EVENT_ITEM_CLEANING: {
+    name: "イベント項目-清掃",
+    description: 'イベント項目のうち、清掃に分類するもの。',
+    items: {
+      FIXED_TIME: {
+        label: "定期清掃",
+        value: "0",
+        order: 1
+      },
+      DISCHARGED_WATER: {
+        label: "排水清掃",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  EVENT_ITEM_OTHER_EVENTS: {
+    name: "イベント項目-その他イベント",
+    description: 'イベント項目のうち、その他イベントに分類するもの。',
+    items: {
+      ASSOC: {
+        label: "組合理事会",
+        value: "0",
+        order: 1
+      },
+      CONGRESS: {
+        label: "組合総会",
+        value: "1",
+        order: 2
+      },
+      BRIEFING: {
+        label: "説明会",
+        value: "2",
+        order: 3
+      },
+      COMMITTEE: {
+        label: "委員会",
+        value: "3",
+        order: 4
+      }
+    }
+  },
+  EVENT_ITEM_OTHER: {
+    name: "イベント項目-その他",
+    description: 'イベント項目のうち、イベントに分類するもの。',
+    items: {
+      OTHER: {
+        label: "その他",
+        value: "0",
+        order: 1
+      }
+    }
+  },
+  EVENT_REPEAT_UNIT: {
+    name: "イベント繰り返し単位",
+    description: 'イベントの繰り返し単位。',
+    items: {
+      WEEK_OR_DAY_OF_WEEK: {
+        label: "繰り返し週/曜日指定",
+        value: "0",
+        order: 1
+      },
+      DAY: {
+        label: "繰り返し日指定",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  EVENT_REPEAT_UNIT_FOR_WEEK: {
+    name: "イベント繰り返し週単位",
+    description: '週レベルでのイベントの繰り返し単位。',
+    items: {
+      EVERY_WEEK: {
+        label: "毎週",
+        value: "0",
+        order: 1
+      },
+      ALTERNATE_WEEK: {
+        label: "隔週",
+        value: "1",
+        order: 2
+      },
+      SELECTION_WEEK: {
+        label: "週選択",
+        value: "2",
+        order: 3
+      }
+    }
+  },
+  EVENT_REPEAT_WEEK: {
+    name: "イベント繰り返し週",
+    description: 'イベントを繰り返す週の候補。',
+    items: {
+      FIRST_WEEK: {
+        label: "第一週",
+        value: "1",
+        order: 1
+      },
+      SECOND_WEEK: {
+        label: "第二週",
+        value: "2",
+        order: 2
+      },
+      THIRD_WEEK: {
+        label: "第三週",
+        value: "4",
+        order: 3
+      },
+      FOURTH_WEEK: {
+        label: "第四週",
+        value: "8",
+        order: 4
+      },
+      FIFTH_WEEK: {
+        label: "第五週",
+        value: "16",
+        order: 5
+      }
+    }
+  },
+  EVENT_REPEAT_DAY_OF_THE_WEEK: {
+    name: "イベント繰り返し曜日",
+    description: 'イベントを繰り返す曜日の候補。',
+    items: {
+      SUNDAY: {
+        label: "日",
+        value: "1",
+        order: 1
+      },
+      MONDAY: {
+        label: "月",
+        value: "2",
+        order: 2
+      },
+      TUESDAY: {
+        label: "火",
+        value: "4",
+        order: 3
+      },
+      WEDNESDAY: {
+        label: "水",
+        value: "8",
+        order: 4
+      },
+      THURSDAY: {
+        label: "木",
+        value: "16",
+        order: 5
+      },
+      FRIDAY: {
+        label: "金",
+        value: "32",
+        order: 6
+      },
+      SATURDAY: {
+        label: "土",
+        value: "64",
+        order: 7
+      }
+    }
+  },
+  EVENT_REPEAT_DAY: {
+    name: "イベント繰り返し日",
+    description: 'イベントを繰り返す日の候補。',
+    items: {
+      VOL_1: {
+        label: "1",
+        value: "1",
+        order: 1
+      },
+      VOL_2: {
+        label: "2",
+        value: "2",
+        order: 2
+      },
+      VOL_3: {
+        label: "3",
+        value: "3",
+        order: 3
+      },
+      VOL_4: {
+        label: "4",
+        value: "4",
+        order: 4
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 5
+      },
+      VOL_6: {
+        label: "6",
+        value: "6",
+        order: 6
+      },
+      VOL_7: {
+        label: "7",
+        value: "7",
+        order: 7
+      },
+      VOL_8: {
+        label: "8",
+        value: "8",
+        order: 8
+      },
+      VOL_9: {
+        label: "9",
+        value: "9",
+        order: 9
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 10
+      },
+      VOL_11: {
+        label: "11",
+        value: "11",
+        order: 11
+      },
+      VOL_12: {
+        label: "12",
+        value: "12",
+        order: 12
+      },
+      VOL_13: {
+        label: "13",
+        value: "13",
+        order: 13
+      },
+      VOL_14: {
+        label: "14",
+        value: "14",
+        order: 14
+      },
+      VOL_15: {
+        label: "15",
+        value: "15",
+        order: 15
+      },
+      VOL_16: {
+        label: "16",
+        value: "16",
+        order: 16
+      },
+      VOL_17: {
+        label: "17",
+        value: "17",
+        order: 17
+      },
+      VOL_18: {
+        label: "18",
+        value: "18",
+        order: 18
+      },
+      VOL_19: {
+        label: "19",
+        value: "19",
+        order: 19
+      },
+      VOL_20: {
+        label: "20",
+        value: "20",
+        order: 20
+      },
+      VOL_21: {
+        label: "21",
+        value: "21",
+        order: 21
+      },
+      VOL_22: {
+        label: "22",
+        value: "22",
+        order: 22
+      },
+      VOL_23: {
+        label: "23",
+        value: "23",
+        order: 23
+      },
+      VOL_24: {
+        label: "24",
+        value: "24",
+        order: 24
+      },
+      VOL_25: {
+        label: "25",
+        value: "25",
+        order: 25
+      },
+      VOL_26: {
+        label: "26",
+        value: "26",
+        order: 26
+      },
+      VOL_27: {
+        label: "27",
+        value: "27",
+        order: 27
+      },
+      VOL_28: {
+        label: "28",
+        value: "28",
+        order: 28
+      },
+      VOL_29: {
+        label: "29",
+        value: "29",
+        order: 29
+      },
+      VOL_30: {
+        label: "30",
+        value: "30",
+        order: 30
+      },
+      VOL_31: {
+        label: "31",
+        value: "31",
+        order: 31
+      },
+      END_OF_MONTH: {
+        label: "月末",
+        value: "99",
+        order: 32
+      }
+    }
+  },
+  TARGET_ATT: {
+    name: "ターゲット属性",
+    description: '二値選択「新規ウィンドウ/なし」の共通コード。',
+    items: {
+      NEW: {
+        label: "新規ウィンドウ",
+        value: "0",
+        order: 1
+      },
+      NONE: {
+        label: "なし",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  RESIDENT_USER_TYPE: {
+    name: "居住者ユーザタイプ",
+    description: '居住者ユーザタイプ「メインユーザ/サブユーザ」',
+    items: {
+      MAIN: {
+        label: "メインユーザ",
+        value: "1",
+        order: 1
+      },
+      SUB: {
+        label: "サブユーザ",
+        value: "2",
+        order: 2
+      }
+    }
+  },
+  VISITORS_RANGE: {
+    name: "閲覧者",
+    description: '二値選択「全て/所有者のみ」の共通コード。',
+    items: {
+      ALL: {
+        label: "全て",
+        value: "0",
+        order: 1
+      },
+      OWNER: {
+        label: "所有者のみ",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  AGREEMENT_TYPE: {
+    name: "規約同意タイプ",
+    description: '規約同意のタイプ',
+    items: {
+      DISAGREE: {
+        label: "同意しない",
+        value: "0",
+        order: 3
+      },
+      SUTEKI_AND_HASOKO: {
+        label: "素敵ネット/長谷工ID",
+        value: "1",
+        order: 1
+      },
+      SUTEKI: {
+        label: "素敵ネット",
+        value: "2",
+        order: 2
+      }
+    }
+  },
+  FACILITY_RESERVATION_TRANSITION_FROM: {
+    name: "施設予約遷移元画面",
+    description: '施設予約の居住者予約で、登録画面に至る遷移元の画面を表す。',
+    items: {
+      RESERVE_TOP: {
+        label: "予約TOP",
+        value: "1",
+        order: 1
+      },
+      YOUR_RESERVATION_STATUS: {
+        label: "あなたの予約状況",
+        value: "2",
+        order: 2
+      },
+      FACILITY_RESERVATION_STATUS: {
+        label: "施設の予約状況",
+        value: "3",
+        order: 3
+      }
+    }
+  },
+  FIRST_LOGIN_REFERRER_ID: {
+    name: "初回ログイン遷移元画面ID",
+    description: '初回ログインでの遷移元画面を示すID',
+    items: {
+      LOGIN: {
+        label: "ログイン",
+        value: "1",
+        order: 1
+      },
+      POLICY_AGREE: {
+        label: "規約同意",
+        value: "2",
+        order: 2
+      },
+      HASEKO_ID_DESCRIPTION: {
+        label: "長谷工ID説明",
+        value: "3",
+        order: 3
+      },
+      AUTHENTICATION_KEY_INPUT: {
+        label: "認証キー入力",
+        value: "4",
+        order: 4
+      },
+      HASEKO_ID_CONFIRM: {
+        label: "長谷工ID確認",
+        value: "5",
+        order: 5
+      },
+      HASEKO_PASSWORD_CONFIRM: {
+        label: "長谷工IDパスワード確認",
+        value: "6",
+        order: 6
+      },
+      SUTEKI_PASSWORD_CONFIRM: {
+        label: "素敵ネットIDパスワード確認",
+        value: "7",
+        order: 7
+      },
+      MAIL_ADDRESS_REGISTER: {
+        label: "メールアドレス登録",
+        value: "8",
+        order: 8
+      },
+      USER_INFO_INPUT: {
+        label: "ユーザ情報入力",
+        value: "9",
+        order: 9
+      },
+      USER_INFO_INPUT_CONFIRM: {
+        label: "ユーザ情報入力確認",
+        value: "10",
+        order: 10
+      },
+      FLP_LINK_GUIDE: {
+        label: "FLP連携誘導",
+        value: "11",
+        order: 11
+      }
+    }
+  },
+  DO_OR_NOT: {
+    name: "しないする",
+    description: '二値選択「しない/する」の共通コード。',
+    items: {
+      DO: {
+        label: "しない",
+        value: "0",
+        order: 1
+      },
+      NOT: {
+        label: "する",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  INFOMATION_TYPE: {
+    name: "情報種別",
+    description: '情報種別コード。',
+    items: {
+      APART_INFO: {
+        label: "マンション情報",
+        value: "0",
+        order: 1
+      },
+      ASSOC_INFO: {
+        label: "管理組合情報",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  MANSION_CATEGORY: {
+    name: "マンション情報カテゴリ",
+    description: 'マンション情報のカテゴリ。',
+    items: {
+      LIFE_BOOKMARK: {
+        label: "生活のしおり",
+        value: "0",
+        order: 1
+      },
+      MANUAL: {
+        label: "取扱説明書",
+        value: "1",
+        order: 2
+      },
+      BROCHURE_DRAWING: {
+        label: "パンフレット図面",
+        value: "2",
+        order: 3
+      },
+      EMERGENCY_INFORMATION: {
+        label: "救急情報",
+        value: "3",
+        order: 4
+      },
+      MANAGEMENT_REPORT: {
+        label: "管理報告書",
+        value: "4",
+        order: 5
+      },
+      RESIDENTS_ASSOCIATION: {
+        label: "自治会",
+        value: "5",
+        order: 6
+      },
+      DISASTER_PREVENTION: {
+        label: "自主防災検討会議",
+        value: "6",
+        order: 7
+      },
+      STORE_DESCRIPTION: {
+        label: "店舗紹介",
+        value: "7",
+        order: 8
+      },
+      COMMUNITY: {
+        label: "コミュニティ",
+        value: "8",
+        order: 9
+      }
+    }
+  },
+  MANAGEMENT_CATEGORY: {
+    name: "管理組合情報カテゴリ",
+    description: '管理組合情報のカテゴリ。',
+    items: {
+      CONFERENCE_NOTE: {
+        label: "議事録",
+        value: "0",
+        order: 1
+      },
+      POLICY_AGREE: {
+        label: "規約同意",
+        value: "1",
+        order: 2
+      },
+      PAPERWORK: {
+        label: "各種届出書類",
+        value: "2",
+        order: 3
+      },
+      CONGRESS: {
+        label: "総会資料",
+        value: "3",
+        order: 4
+      },
+      OTHER: {
+        label: "その他",
+        value: "4",
+        order: 5
+      },
+      EVENT: {
+        label: "イベント報告",
+        value: "5",
+        order: 6
+      }
+    }
+  },
+  YES_OR_NOT: {
+    name: "はいいいえ",
+    description: '二値選択「はい/いいえ」の共通コード。',
+    items: {
+      YES: {
+        label: "はい",
+        value: "1",
+        order: 1
+      },
+      NO: {
+        label: "いいえ",
+        value: "0",
+        order: 2
+      }
+    }
+  },
+  MESSAGE_CATEGORY: {
+    name: "メッセージカテゴリ",
+    description: 'メッセージのカテゴリ。メッセージ登録・編集時には、システム運用スタッフ,コールセンター,フロントスタッフが指定可能なカテゴリ群。',
+    items: {
+      OPERATING_COMPANY: {
+        label: "運営者より",
+        value: "0",
+        order: 1
+      },
+      MANAGEMENT_COMPANY: {
+        label: "管理会社より",
+        value: "1",
+        order: 2
+      },
+      ASSOC: {
+        label: "管理組合より",
+        value: "2",
+        order: 3
+      },
+      CLUB: {
+        label: "クラブより",
+        value: "3",
+        order: 4
+      },
+      CIRCLE: {
+        label: "サークルより",
+        value: "4",
+        order: 5
+      },
+      COMMITTEE: {
+        label: "委員会より",
+        value: "5",
+        order: 6
+      },
+      MANAGEMENT_COMPANY_PR: {
+        label: "管理会社PR",
+        value: "6",
+        order: 7
+      },
+      RESIDENTS_ASSOCIATION: {
+        label: "自治会より",
+        value: "7",
+        order: 8
+      }
+    }
+  },
+  MESSAGE_CATEGORY_FOR_LEVEL4: {
+    name: "メッセージカテゴリ(階層レベル4向け)",
+    description: 'メッセージ登録・編集時に、ライフマネージャ,コンシェルジュ(他社)が指定可能なカテゴリ群。',
+    items: {
+      MANAGEMENT_COMPANY: {
+        label: "管理会社より",
+        value: "1",
+        order: 1
+      },
+      ASSOC: {
+        label: "管理組合より",
+        value: "2",
+        order: 2
+      },
+      CLUB: {
+        label: "クラブより",
+        value: "3",
+        order: 3
+      },
+      CIRCLE: {
+        label: "サークルより",
+        value: "4",
+        order: 4
+      },
+      COMMITTEE: {
+        label: "委員会より",
+        value: "5",
+        order: 5
+      },
+      MANAGEMENT_COMPANY_PR: {
+        label: "管理会社PR",
+        value: "6",
+        order: 6
+      },
+      RESIDENTS_ASSOCIATION: {
+        label: "自治会より",
+        value: "7",
+        order: 7
+      }
+    }
+  },
+  MESSAGE_CATEGORY_FOR_MANAGEMENT_UNION: {
+    name: "メッセージカテゴリ(管理組合理事会向け)",
+    description: 'メッセージ登録・編集時に、管理組合理事会が指定可能なカテゴリ群。',
+    items: {
+      ASSOC: {
+        label: "管理組合より",
+        value: "1",
+        order: 1
+      },
+      RESIDENTS_ASSOCIATION: {
+        label: "自治会より",
+        value: "7",
+        order: 2
+      }
+    }
+  },
+  MONTH: {
+    name: "月",
+    description: '「月」に指定可能な値。1～12まで。',
+    items: {
+      VOL_1: {
+        label: "1",
+        value: "1",
+        order: 1
+      },
+      VOL_2: {
+        label: "2",
+        value: "2",
+        order: 2
+      },
+      VOL_3: {
+        label: "3",
+        value: "3",
+        order: 3
+      },
+      VOL_4: {
+        label: "4",
+        value: "4",
+        order: 4
+      },
+      VOL_5: {
+        label: "5",
+        value: "5",
+        order: 5
+      },
+      VOL_6: {
+        label: "6",
+        value: "6",
+        order: 6
+      },
+      VOL_7: {
+        label: "7",
+        value: "7",
+        order: 7
+      },
+      VOL_8: {
+        label: "8",
+        value: "8",
+        order: 8
+      },
+      VOL_9: {
+        label: "9",
+        value: "9",
+        order: 9
+      },
+      VOL_10: {
+        label: "10",
+        value: "10",
+        order: 10
+      },
+      VOL_11: {
+        label: "11",
+        value: "11",
+        order: 11
+      },
+      VOL_12: {
+        label: "12",
+        value: "12",
+        order: 12
+      }
+    }
+  },
+  DISP_TYPE_ALL_MODE: {
+    name: "表示種別（全体モード）",
+    description: '生活便利帳の表示種別（全体モード）',
+    items: {
+      LINK: {
+        label: "便利リンク",
+        value: "0",
+        order: 1
+      },
+      AREA_INFO: {
+        label: "地域情報",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  DISP_TYPE_ARTICLE_SELECT_MODE: {
+    name: "表示種別（物件選択モード）",
+    description: '生活便利帳の表示種別（物件選択モード）',
+    items: {
+      BANNER: {
+        label: "マンション情報(バナーあり)",
+        value: "2",
+        order: 1
+      },
+      NO_BANNER: {
+        label: "マンション情報(バナーなし)",
+        value: "3",
+        order: 2
+      }
+    }
+  },
+  LIFE_CONVENIENT_BOOK_CATEGORY: {
+    name: "生活便利帳カテゴリー",
+    description: '生活便利帳のカテゴリ',
+    items: {
+      GOVERNMENT: {
+        label: "行政",
+        value: "1",
+        order: 1
+      },
+      LIFE: {
+        label: "くらし 生活",
+        value: "2",
+        order: 2
+      },
+      VALUABLE: {
+        label: "お役立ち",
+        value: "3",
+        order: 3
+      },
+      DISASTER_PREVENTION: {
+        label: "防災",
+        value: "4",
+        order: 4
+      },
+      OTHER: {
+        label: "その他",
+        value: "5",
+        order: 5
+      }
+    }
+  },
+  FILE_FORMAT: {
+    name: "ファイル形式",
+    description: '出力ファイルのファイル形式を表すコード。',
+    items: {
+      CSV: {
+        label: "CSV",
+        value: "0",
+        order: 1
+      },
+      ZIP: {
+        label: "ZIP",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  NOTIFICATION_DO_OR_NOT: {
+    name: "通知するしない",
+    description: '二値選択「通知する/しない」の共通コード。',
+    items: {
+      NOTICE: {
+        label: "通知する",
+        value: "1",
+        order: 1
+      },
+      DO_NOT_NOTIFY: {
+        label: "通知しない",
+        value: "0",
+        order: 2
+      }
+    }
+  },
+  PUBLICATION_STATUS: {
+    name: "掲載状態",
+    description: '掲載状態。',
+    items: {
+      BEFORE_PUBLICATION: {
+        label: "掲載前",
+        value: "1",
+        order: 1
+      },
+      BEING_PUBLISHED: {
+        label: "掲載中",
+        value: "2",
+        order: 2
+      },
+      POSTING_END: {
+        label: "終了",
+        value: "3",
+        order: 3
+      }
+    }
+  },
+  REQUIRED_CHECK: {
+    name: "必須（チェック）",
+    description: '必須チェック表示ラベルのコード。',
+    items: {
+      ELECTIVE: {
+        label: "－",
+        value: "0",
+        order: 1
+      },
+      REQUIRED: {
+        label: "✓",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  VIEW_DO_OR_NOT: {
+    name: "表示しないする",
+    description: '二値選択「表示しない/する」の共通コード。',
+    items: {
+      DISPLAY: {
+        label: "表示する",
+        value: "0",
+        order: 1
+      },
+      HIDDEN: {
+        label: "表示しない",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  REGISTRATION_UNIT: {
+    name: "登録単位",
+    description: '登録単位。個別に登録するか、一括で登録するか',
+    items: {
+      INDIVIDUAL: {
+        label: "個別登録",
+        value: "1",
+        order: 1
+      },
+      BULK: {
+        label: "一括登録",
+        value: "2",
+        order: 2
+      }
+    }
+  },
+  THREAD_CATEGORY: {
+    name: "スレッドカテゴリ",
+    description: 'スレッドのカテゴリ。',
+    items: {
+      RESIDENT: {
+        label: "居住者専用",
+        value: "0",
+        order: 1
+      },
+      ADMIN: {
+        label: "管理者専用",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  LOTTERY_PROCESSING_STATUS: {
+    name: "抽選処理ステータス",
+    description: '施設予約の抽選処理の実行状態',
+    items: {
+      PROCESSING: {
+        label: "抽選中",
+        value: "0",
+        order: 1
+      },
+      COMPLETE: {
+        label: "抽選完了",
+        value: "9",
+        order: 2
+      }
+    }
+  },
+  THREAD_PRIORITY: {
+    name: "スレッド優先度",
+    description: 'スレッドの優先度。',
+    items: {
+      NORMAL: {
+        label: "普通",
+        value: "0",
+        order: 1
+      },
+      IMPORTANT: {
+        label: "優先",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  THREAD_SEARCH: {
+    name: "スレッド検索条件",
+    description: 'スレッドの検索条件。',
+    items: {
+      MY_THREAD: {
+        label: "自分のスレッドのみ",
+        value: "0",
+        order: 1
+      },
+      MANY_REPLIES: {
+        label: "返信が多い",
+        value: "1",
+        order: 2
+      },
+      FEW_REPLIES: {
+        label: "返信が少ない",
+        value: "2",
+        order: 3
+      },
+      LATEST: {
+        label: "更新日時が新しい",
+        value: "3",
+        order: 4
+      },
+      OLDEST: {
+        label: "更新日時が古い",
+        value: "4",
+        order: 5
+      }
+    }
+  },
+  PERSONAL_INFO_OPERATION_TYPE: {
+    name: "個人情報操作種別",
+    description: '個人情報操作の種別',
+    items: {
+      PRINT: {
+        label: "印刷",
+        value: "1",
+        order: 1
+      },
+      EXPORT: {
+        label: "エクスポート",
+        value: "2",
+        order: 2
+      }
+    }
+  },
+  MESSAGE_TYPE: {
+    name: "メッセージタイプ",
+    description: 'メッセージタイプ',
+    items: {
+      INFORMATION: {
+        label: "information",
+        value: "1",
+        order: 1
+      },
+      WARNING: {
+        label: "warning",
+        value: "2",
+        order: 2
+      },
+      CRITICAL: {
+        label: "critical",
+        value: "3",
+        order: 3
+      },
+      ERROR: {
+        label: "error",
+        value: "4",
+        order: 4
+      }
+    }
+  },
+  EXTERNAL_API_RESULT_CODE: {
+    name: "外部API結果コード",
+    description: '外部API結果コード',
+    items: {
+      SUCCESS: {
+        label: "成功",
+        value: "00",
+        order: 1
+      },
+      WARN: {
+        label: "警告",
+        value: "10",
+        order: 2
+      },
+      FORMAT_ERROR: {
+        label: "リクエストパラメータの構造エラー",
+        value: "20",
+        order: 3
+      },
+      INPUT_ERROR: {
+        label: "入力値エラー",
+        value: "30",
+        order: 4
+      },
+      INTERNAL_ERROR: {
+        label: "内部エラー",
+        value: "99",
+        order: 5
+      }
+    }
+  },
+  SELECT_CONDOMINIUM_TYPE: {
+    name: "物件選択種別",
+    description: '物件選択画面の表示種別。',
+    items: {
+      CONDOMINIUM: {
+        label: "物件を選択する",
+        value: "0",
+        order: 1
+      },
+      EXCLUDE_CONDOMINIUM: {
+        label: "除外物件を選択する",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  SELECT_USER_TYPE: {
+    name: "ユーザ選択種別",
+    description: 'ユーザ選択画面の表示種別。',
+    items: {
+      USER: {
+        label: "ユーザを選択する",
+        value: "0",
+        order: 1
+      },
+      ROOM_NUMBER: {
+        label: "同時入室番号を選択する",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  LOGIN_MODE: {
+    name: "ログインモード",
+    description: 'ログインモード',
+    items: {
+      RESIDENT: {
+        label: "居住者",
+        value: "0",
+        order: 1
+      },
+      ADMIN: {
+        label: "管理者",
+        value: "1",
+        order: 2
+      }
+    }
+  },
+  ROLE_TYPE: {
+    name: "ロール区分",
+    description: '管理者と居住者のどちらのロールかを示す識別子',
+    items: {
+      ADMIN: {
+        label: "管理者ロール",
+        value: "A",
+        order: 1
+      },
+      RESIDENT: {
+        label: "居住者ロール",
+        value: "R",
+        order: 2
+      }
+    }
+  },
+  ROLE_FOR_ADMINISTRATOR: {
+    name: "管理者ロール",
+    description: '管理者ロール',
+    items: {
+      SYSTEM_ADMIN: {
+        label: "システム管理者",
+        value: "A01",
+        order: 1
+      },
+      CALL_CENTER: {
+        label: "コールセンター",
+        value: "A02",
+        order: 2
+      },
+      FRONT_STAFF: {
+        label: "フロントスタッフ",
+        value: "A03",
+        order: 3
+      },
+      LIFE_MANAGER: {
+        label: "ライフマネージャ",
+        value: "A04",
+        order: 4
+      },
+      CONCIERGE: {
+        label: "コンシェルジュ",
+        value: "A05",
+        order: 5
+      },
+      ASSOC: {
+        label: "管理組合理事会",
+        value: "A06",
+        order: 6
+      }
+    }
+  },
+  ROLE_FOR_RESIDENT: {
+    name: "居住者ロール",
+    description: '居住者ロール',
+    items: {
+      RESIDENT: {
+        label: "内部居住者",
+        value: "R01",
+        order: 1
+      },
+      APPROPRIATOR: {
+        label: "占有者",
+        value: "R02",
+        order: 2
+      },
+      OWNER: {
+        label: "外部所有者",
+        value: "R03",
+        order: 3
+      }
+    }
+  },
+  FACILITY_CATEGORY: {
+    name: "施設カテゴリ",
+    description: '施設のカテゴリ',
+    items: {
+      GUEST_ROOM: {
+        label: "ゲストルーム",
+        value: "1",
+        order: 1
+      },
+      PARTY_ROOM: {
+        label: "パーティールーム",
+        value: "2",
+        order: 2
+      },
+      KARAOKE_ROOM: {
+        label: "カラオケルーム",
+        value: "3",
+        order: 3
+      },
+      MEETING_ROOM: {
+        label: "会議室",
+        value: "4",
+        order: 4
+      },
+      COMMUNITY_ROOM: {
+        label: "コミュニティスペース",
+        value: "5",
+        order: 5
+      },
+      KIDS_ROOM: {
+        label: "キッズスペース",
+        value: "6",
+        order: 6
+      },
+      GUEST_PARKING: {
+        label: "ゲスト駐車場",
+        value: "7",
+        order: 7
+      },
+      POOL_GYM: {
+        label: "プール・トレーニングルーム",
+        value: "8",
+        order: 8
+      },
+      POOL: {
+        label: "プール",
+        value: "9",
+        order: 9
+      },
+      CLUB_ARENA: {
+        label: "クラブアリーナ",
+        value: "10",
+        order: 10
+      },
+      GYM: {
+        label: "トレーニングジム",
+        value: "11",
+        order: 11
+      },
+      BAR_LOUNGE: {
+        label: "バーラウンジ",
+        value: "12",
+        order: 12
+      },
+      CAFE: {
+        label: "カフェ",
+        value: "13",
+        order: 13
+      },
+      TERRACE: {
+        label: "テラス",
+        value: "14",
+        order: 14
+      },
+      SAUNA_BATH: {
+        label: "サウナ",
+        value: "15",
+        order: 15
+      },
+      BATH: {
+        label: "浴室",
+        value: "16",
+        order: 16
+      },
+      BBQ: {
+        label: "バーベキュー広場",
+        value: "17",
+        order: 17
+      },
+      CYCLING: {
+        label: "レンタサイクル",
+        value: "18",
+        order: 18
+      },
+      CARWASH: {
+        label: "洗車スペース",
+        value: "19",
+        order: 19
+      },
+      FITNESS: {
+        label: "フィットネス",
+        value: "20",
+        order: 20
+      },
+      GYMNASIUM: {
+        label: "体育館",
+        value: "21",
+        order: 21
+      },
+      THEATER_ROOM: {
+        label: "シアタールーム",
+        value: "22",
+        order: 22
+      },
+      KITCHEN_ROOM: {
+        label: "キッチンルーム",
+        value: "23",
+        order: 23
+      },
+      ETC: {
+        label: "マルチルーム",
+        value: "24",
+        order: 24
+      },
+      MULTIPURPOSE_ROOM: {
+        label: "多目的室",
+        value: "25",
+        order: 25
+      },
+      OTHER: {
+        label: "その他",
+        value: "26",
+        order: 26
+      }
+    }
+  },
+  SELECT_OR_NOT: {
+    name: "選択未選択",
+    description: '選択/未選択」の共通コード。',
+    items: {
+      SELECT: {
+        label: "選択",
+        value: "True",
+        order: 1
+      },
+      UNSELECTED: {
+        label: "未選択",
+        value: "False",
+        order: 2
+      }
+    }
+  }
+}

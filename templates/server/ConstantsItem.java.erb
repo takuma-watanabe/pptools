@@ -1,0 +1,6 @@
+<%= "  " * depth%>// <%= record.description %>
+<%- if record.type==='int' -%>
+<%= "  " * depth%><%= record.type %> <%= record.name%> = <%= record.value%>;
+<%- else -%>
+<%= "  " * depth%><%= record.type %> <%= record.name%> = "<%= record.value%>";
+<%- end -%>

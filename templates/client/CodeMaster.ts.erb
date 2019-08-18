@@ -1,0 +1,54 @@
+/* tslint:disable */
+/***
+ * コード一覧
+ *
+ * [使い方]（例：ありなし）
+ * 
+ * - 指定のコード値取得
+ *  CodeMaster.HAVE_OR_NOT.NOT.code
+ *  CodeMaster.HAVE_OR_NOT.HAVE.code
+ * 
+ * - コード値に対するラベルの取得
+ *  const label = CodeMaster.HAVE_OR_NOT.codeToEnumConstants("0")
+ *  if ( !label ) {
+ *    //エラー処理
+ *  }
+ * 
+ * - 指定区分のコード値一覧取得
+ *  CodeMaster.HAVE_OR_NOT.values();
+ * 
+***/
+
+// 共通インタフェース
+class CodeMasterInterface {
+    protected static  _values: CodeMasterInterface[] = [];
+
+    /** コンストラクタ */
+    public constructor(readonly value: string, readonly label: string, readonly displayOrder: number) {
+    }
+
+    /** コード値 → Enum定数への変換を行う。 */
+    static codeToEnumConstants(value: string): CodeMasterInterface | undefined {
+        return this._values.find(x => x.value === value);
+    }
+
+    static values(): CodeMasterInterface[] {
+        return this._values;
+    }
+}
+
+<%- records.each do |record| -%>
+// <%= record.logicalName %>
+export class <%= record.phisicalName %> extends CodeMasterInterface {
+    protected static  _values: <%= record.phisicalName %>[] = [];
+    <%- record.items.each do |item| -%>
+    /** <%= item.logicalName %> */
+    static readonly <%= item.phisicalName %> = new <%= record.phisicalName %>("<%= item.value %>", "<%= item.logicalName %>", <%= item.order %>);
+    <%- end -%>
+    /** コンストラクタ */
+    private constructor(readonly value: string, readonly label: string, readonly displayOrder: number) {
+        super(value, label, displayOrder);
+        <%= record.phisicalName %>._values.push(this);
+    }
+}
+<%- end -%>

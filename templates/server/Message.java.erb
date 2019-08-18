@@ -1,0 +1,45 @@
+package com.hisol.pinkpanther;
+
+import java.text.MessageFormat;
+
+/**
+ * メッセージを表す定数クラス
+ * <p>
+ * [使い方]
+ * <p>
+ * - 対応するメッセージを取得(埋込文字列なし)
+ * Message.IOPCC0013.getMessage();
+ * <p>
+ * - 対応するメッセージを取得(埋込文字列あり)
+ * Message.IOPCC0001.getMessage("物件");
+ */
+public enum Message {
+    <%- records.each do |record| -%>
+    <%=   record.id %>("<%= record.message %>"),
+    <%- end -%>
+    ;
+
+    /**
+     * メッセージ
+     */
+    private final MessageFormat message;
+
+    /**
+     * コンストラクタ
+     *
+     * @param message メッセージ
+     */
+    Message(final String message) {
+        this.message = new MessageFormat(message);
+    }
+
+    /**
+     * Enumに応じたメッセージを返却する。
+     *
+     * @param params 埋込文字列の配列(省略可能)
+     * @return Enumに応じたメッセージ
+     */
+    public String getMessage(final Object... params) {
+        return this.message.format(params);
+    }
+}

@@ -1,0 +1,34 @@
+/* tslint:disable */
+import {ErrorLevel} from './components/shared/BasePageComponent'
+
+/***
+ * メッセージ一覧
+ *
+ * [使い方]
+ *
+ * - コード値に対するメッセージの取得
+ *  const message = Messages.IOPCC0012.toString()
+ *
+ * - コード値に対するメッセージに埋め込み文字を含めて取得
+ *  const message = Messages.IOPCC0012.toString(['設備', '有料'])
+ *
+ ***/
+export class Messages {
+    toString(...args: string[]): string {
+        let formattedString: string = this.message
+        args.forEach((arg: string, index: number) => {
+            formattedString = formattedString.replace(`{${index}}`, arg)
+        })
+        return formattedString
+    }
+
+    toStringWithId(...args: string[]): string {
+        return `${this.id}:${this.toString(...args)}`
+    }
+
+    private constructor(readonly id: string, readonly message: string, readonly errorLevel: ErrorLevel) {
+    }
+    <%- records.each do |record| -%>
+    static readonly <%= record.id %> = new Messages('<%= record.id%>', '<%= record.message %>', <%= record.level%>)
+    <%- end -%>
+}
